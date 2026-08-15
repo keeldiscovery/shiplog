@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ShipLog — weekly build-in-public digest</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="page-header">
+      <h1>ShipLog</h1>
+      <p class="tagline">
+        Turn a week of public GitHub activity into a draft "build in
+        public" update — reviewed and edited by you before anything
+        leaves this page.
+      </p>
+    </header>
+
+    <main class="card">
+      <section class="generate-row" aria-label="Generate a digest">
+        <label for="username" class="field-label">GitHub username</label>
+        <div class="input-row">
+          <input
+            id="username"
+            type="text"
+            placeholder="e.g. sindresorhus"
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <button id="generate-btn" type="button">Generate</button>
+        </div>
+        <p id="status" class="status" data-state="idle" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="context-section" aria-label="Context and why">
+        <label for="context" class="field-label">
+          Context / why <span class="field-hint">(what mattered this week, and why — this gets woven into your draft)</span>
+        </label>
+        <textarea
+          id="context"
+          rows="3"
+          placeholder="e.g. Spent most of the week fixing the onboarding flow after three users bounced during signup — this should unblock the next batch of interviews."
+        ></textarea>
+        <p id="context-hint" class="context-hint" aria-live="polite"></p>
+      </section>
+
+      <section class="draft-section" aria-label="Draft update">
+        <label for="draft" class="field-label">Your draft (edit freely — this is what gets copied or exported)</label>
+        <textarea
+          id="draft"
+          rows="14"
+          placeholder="Your generated draft will appear here once you click Generate. You can edit it directly at any time."
+        ></textarea>
+      </section>
+
+      <section class="actions-row" aria-label="Finish and export">
+        <button id="copy-btn" type="button" class="secondary" disabled>Copy to clipboard</button>
+        <button id="export-btn" type="button" class="secondary" disabled>Export as Markdown</button>
+        <p id="action-confirm" class="action-confirm" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>
+        Reads only public, unauthenticated GitHub activity. Nothing is
+        ever sent anywhere automatically — copy and export are the only
+        two ways text leaves this page.
+      </p>
+    </footer>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
