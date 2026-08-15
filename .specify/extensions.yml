@@ -1,0 +1,25 @@
+installed:
+- keel
+settings:
+  auto_execute_hooks: true
+hooks:
+  before_plan:
+  - extension: keel
+    command: speckit.keel.check
+    enabled: true
+    optional: true
+    priority: 10
+    prompt: 'Keel: verify the spec is backed by evidence before planning?'
+    description: 'Surfaces a coverage/saturation check before planning. Not run automatically:
+      a project with no keel/ directory must not be blocked by a hook it never opted
+      into. keel-gate.sh is what actually enforces, and only once keel/ exists.'
+    condition: null
+  after_implement:
+  - extension: keel
+    command: speckit.keel.audit
+    enabled: true
+    optional: true
+    priority: 10
+    prompt: 'Keel: audit the implementation against the original evidence?'
+    description: Round-trip drift check between shipped code and approved intent.
+    condition: null

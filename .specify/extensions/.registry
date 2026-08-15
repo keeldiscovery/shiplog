@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "extensions": {
+    "keel": {
+      "version": "0.2.0",
+      "source": "local",
+      "manifest_hash": "sha256:03bcf7cf801e52168f97ac1621f8e3b127ad521ecd799a014413d4980bf2f476",
+      "enabled": true,
+      "priority": 10,
+      "registered_commands": {
+        "claude": [
+          "speckit.keel.guide",
+          "speckit.keel.init",
+          "speckit.keel.add-evidence",
+          "speckit.keel.check",
+          "speckit.keel.brief",
+          "speckit.keel.audit"
+        ]
+      },
+      "registered_skills": [],
+      "installed_at": "2026-08-15T18:05:49.125865+00:00"
+    }
+  }
+}
