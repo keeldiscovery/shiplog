@@ -2,7 +2,7 @@
 
 Turn a week of public GitHub activity into a draft "build in public" update — reviewed and edited by you before anything leaves the page. No auth token, no auto-post.
 
-This repo is not a hand-written demo. It's the literal output of one real run through [Keel](https://github.com/keeldiscovery/spec-kit-keel) (`feature/guided-validation-workflow`), a discovery layer for [Spec Kit](https://github.com/github/spec-kit): a hypothesis, four interviews, a gate that actually blocked and then passed, a brief, and Spec Kit's own `constitution → specify → plan → tasks → implement → converge` pipeline, finishing with a `keel.audit` round-trip check against the original evidence.
+This repo is not a hand-written demo. It's the literal output of one real run through [Keel](https://github.com/keeldiscovery/spec-kit-keel) (`feature/guided-validation-workflow`), a discovery layer for [Spec Kit](https://github.com/github/spec-kit): a hypothesis, four interviews (**synthetic, disclosed below** — not collected from real people), a gate that actually blocked and then passed, a brief, and Spec Kit's own `constitution → specify → plan → tasks → implement → converge` pipeline, finishing with a `keel.audit` round-trip check against the original evidence. This proves the Keel-to-Spec-Kit mechanism works end to end — it is not evidence that real founders want ShipLog.
 
 The full story — problem statement, interviews, gate output, and the outcome — is written up at **[keeldiscovery.com/showcase](https://keeldiscovery.com/showcase/)**.
 
